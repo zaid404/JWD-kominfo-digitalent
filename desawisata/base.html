@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-image: url('https://asset-2.tstatic.net/medan/foto/bank/images/istana-maimun-2.jpg');
+            background-size: cover;
+            color: silver;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        section {
+            display: flex;
+            flex: 1;
+        }
+		nav {
+			width: 25%; /* Mengambil 25% dari lebar section */
+			background: #ccc;
+			padding: 20px;
+			height: 100%; /* Membuat nav penuh di sisi kanan */
+		}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        article {
+            width: 75%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            overflow: auto;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Golden Week Holiday</h1>
+            <div class="header-buttons">
+                <button onclick="location.href='signup.html'">Daftar Akun</button>
+                <button onclick="location.href='login.html'">Login Akun</button>
+                <button onclick="location.href='list.php'">Daftar Pesanan</button>
+                <button onclick="location.href='form.php'">Pesan Sekarang</button>
+                <button onclick="location.href='logout.php'">Logout</button>
+                <button onclick="location.href='index.html'">Home</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
